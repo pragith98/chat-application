@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package chatapp;
+package com.chatApp.main;
 
 /**
  *
  * @author Pragith
  */
-public class ChatApp {
+public class Main {
 
     /**
      * @param args the command line arguments

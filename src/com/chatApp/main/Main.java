@@ -9,6 +9,8 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
 
+import com.chatApp.form.Home;
+
 /**
  *
  * @author Pragith
@@ -46,6 +48,7 @@ public class Main extends javax.swing.JFrame {
         cmdClose = new javax.swing.JButton();
         cmdMinimize = new javax.swing.JButton();
         body = new javax.swing.JLayeredPane();
+        home1 = new com.chatApp.form.Home();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -89,7 +92,7 @@ public class Main extends javax.swing.JFrame {
         titleLayout.setHorizontalGroup(
             titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titleLayout.createSequentialGroup()
-                .addContainerGap(730, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(cmdMinimize)
                 .addGap(18, 18, 18)
                 .addComponent(cmdClose))
@@ -101,6 +104,7 @@ public class Main extends javax.swing.JFrame {
         );
 
         body.setLayout(new java.awt.BorderLayout());
+        body.add(home1, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
         background.setLayout(backgroundLayout);
@@ -109,7 +113,7 @@ public class Main extends javax.swing.JFrame {
             .addComponent(title, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(body)
+                .addComponent(body, javax.swing.GroupLayout.DEFAULT_SIZE, 786, Short.MAX_VALUE)
                 .addContainerGap())
         );
         backgroundLayout.setVerticalGroup(
@@ -135,7 +139,7 @@ public class Main extends javax.swing.JFrame {
             borderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, borderLayout.createSequentialGroup()
                 .addGap(1, 1, 1)
-                .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -214,6 +218,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel border;
     private javax.swing.JButton cmdClose;
     private javax.swing.JButton cmdMinimize;
+    private com.chatApp.form.Home home1;
     private javax.swing.JPanel title;
     // End of variables declaration//GEN-END:variables
 }

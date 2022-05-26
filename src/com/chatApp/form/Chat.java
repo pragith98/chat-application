@@ -30,7 +30,7 @@ public class Chat extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(162, 162, 162));
 
-        jLabel1.setText("chat");
+        jLabel1.setText("Chat");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

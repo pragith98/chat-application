@@ -14,7 +14,7 @@ import net.miginfocom.swing.MigLayout;
  *
  * @author Pragith
  */
-public class Home extends javax.swing.JPanel {
+public class Home extends javax.swing.JLayeredPane {
 
     /**
      * Creates new form Home

@@ -4,20 +4,12 @@
  */
 package com.chatApp.swing;
 
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.GraphicsEnvironment;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Window;
-import java.awt.event.MouseAdapter;
-import java.util.HashMap;
-import java.util.Map;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
-import org.w3c.dom.events.MouseEvent;
+//import org.w3c.dom.events.MouseEvent;
 
 /**
  *

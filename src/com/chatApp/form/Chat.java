@@ -4,32 +4,17 @@
  */
 package com.chatApp.form;
 
-import net.miginfocom.swing.MigLayout;
-
-
-
-
-
 /**
  *
  * @author Pragith
  */
-public class Home extends javax.swing.JPanel {
+public class Chat extends javax.swing.JPanel {
 
     /**
-     * Creates new form Home
+     * Creates new form Menu_Left
      */
-    public Home() {
+    public Chat() {
         initComponents();
-        init();
-    }
-    
-    private void init(){
-        setLayout(new MigLayout("fillx, filly", "0[]5[]5[]0",""));
-        this.add(new Menu_Left());
-        this.add(new Chat());
-        this.add(new Menu_Right());
-    
     }
 
     /**
@@ -41,19 +26,32 @@ public class Home extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(162, 162, 162));
+
+        jLabel1.setText("chat");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 523, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(92, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 369, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(84, 84, 84)
+                .addComponent(jLabel1)
+                .addContainerGap(393, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

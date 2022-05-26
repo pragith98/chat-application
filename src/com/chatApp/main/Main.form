@@ -77,7 +77,7 @@
                   <Component id="title" alignment="1" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="body" max="32767" attributes="0"/>
+                      <Component id="body" pref="1196" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -105,7 +105,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace pref="730" max="32767" attributes="0"/>
+                          <EmptySpace pref="1140" max="32767" attributes="0"/>
                           <Component id="cmdMinimize" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="cmdClose" min="-2" max="-2" attributes="0"/>

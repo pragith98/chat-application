@@ -4,6 +4,10 @@
  */
 package com.chatApp.main;
 
+import com.chatApp.swing.ComponentResizer;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 /**
  *
  * @author Pragith
@@ -15,6 +19,15 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        init();
+    }
+    
+    private void init(){
+        ComponentResizer com = new ComponentResizer();
+        com.registerComponent(this);
+        com.setMinimumSize(new Dimension(800,500));
+        com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());
+        com.setSnapSize(new Dimension(10,10));
     }
 
     /**
@@ -28,6 +41,7 @@ public class Main extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(800, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
